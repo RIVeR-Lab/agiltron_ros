@@ -1,0 +1,5 @@
+<launch>
+  <node name="fiber_sel" pkg="agiltron_ros" type="fiber_sel.py" />
+  <node name="agiltron" pkg="agiltron_ros" type="switcher.py"/>
+  <node name="FLIRLepton" pkg="flir_lepton" type="grab_thermal.py"/>
+</launch>
