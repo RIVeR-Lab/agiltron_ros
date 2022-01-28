@@ -52,6 +52,7 @@ class AGILTRON:
         '''
         Algin mirror to read from correct fiber
         '''
+        #print(msg.data)
         # Grab current time to limit how often we switch
         channel = int(msg.data)
         if rospy.get_time()- self.now < 2:
